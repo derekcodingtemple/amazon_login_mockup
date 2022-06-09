@@ -1,0 +1,85 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a{
+    color: #0066C0;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 1.5px;
+
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#form-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.create-new-account-container .background {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.create-new-account-container .background:before {
+    border-top: 1px solid #ccc;
+    content: "";
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.create-new-account-container .background span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+#form-container form button {
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    border-color: #a88734 #9c7e31 #846a29;
+}
+
+#form-container form button:hover {
+    background: linear-gradient(to bottom,#f5d78e,#eeb933);
+    border-color: #a88734 #9c7e31 #846a29;
+}
+
+.create-new-account-container button {
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    color: #000;
+}
+
+.create-new-account-container button:hover {
+    background: linear-gradient(to bottom,#e7eaf0,#d9dce1);
+    border-color: #a2a6ac #979aa1 #82858a;
+    color: #000;
+}
+
+.row > div {
+    max-width: 440px;
+}
+
+@media(max-width: 425px) {
+    html {
+        font-size: 11px;
+    }
+
+    .arrow {
+        padding: 1.2px;
+    }
+}
